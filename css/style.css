@@ -1,0 +1,123 @@
+.content-wraper,
+.environment,
+.realm,
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    position: fixed;
+    z-index: 10;
+}
+
+.environment {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: perspective(500px);
+    -moz-transform: perspective(500px);
+    -o-transform: perspective(500px);
+    transform: perspective(500px);
+    -webkit-perspective: 500px;
+    -moz-perspective: 500px;
+    -ms-perspective: 500px;
+    -o-perspective: 500px;
+    perspective: 500px;
+    -webkit-perspective-origin: center center;
+    -moz-perspective-origin: center center;
+    -ms-perspective-origin: center center;
+    -o-perspective-origin: center center;
+    perspective-origin: center center;
+}
+
+.realm {
+    top: 0;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.env__depth {
+    position: relative;
+    z-index: 0;
+}
+
+.layer h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    margin: -150px 0 0 -150px;
+    font-size: 10px;
+    color: #ffffff;
+    padding: 5px;
+}
+
+#layer1 h1 {
+    background-color: red;
+}
+
+#layer2 h1 {
+    background-color: deepskyblue;
+}
+
+#layer3 h1 {
+    background-color: gold;
+}
+
+#layer4 h1 {
+    background-color: mediumvioletred;
+}
+
+#layer5 h1 {
+    background-color: darkcyan;
+}
+
+#layer6 h1 {
+    background-color: darkblue;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+.main-nav {
+    display: block;
+    margin: 0 auto;
+}
+
+.nav_item {
+    display: block;
+    float: left;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav_item:hover, .nav_item.nav_item--active {
+    color: olivedrab;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    text-align: center;
+    padding: 10px;
+    color: rgba(180, 180, 180, 0.7);
+    font-size: 12px;
+}
