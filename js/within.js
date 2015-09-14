@@ -3,11 +3,11 @@ var enterWithin = (function() {
             document: document,
             window: window,
             body: 'body, html',
-            scene: '.scene',
+            scene: '.realm',
             layers: '.layer',
             depth: '.env__depth',
-            menu: '.menu',
-            anchor: 'a[href^="#'
+            menu: '.main-nav',
+            anchor: 'a[href^="#"]'
         },
         classes = {
             activeMenu: 'nav_item-active'
@@ -33,7 +33,7 @@ var enterWithin = (function() {
 
         setZPosition(nodes.scene, scroll);
 
-        setActive();
+        updateActive();
     }
 
     function updateActive() {
@@ -87,9 +87,9 @@ var enterWithin = (function() {
                 setZPosition(layer, -layer.data('depth'));
             });
 
-            zoomScene();
+            zoomEnv();
 
-            var throttledZoom = _.throttle(zoomScene, 25);
+            var throttledZoom = _.throttle(zoomEnv, 25);
 
             nodes.window.on('scroll', throttledZoom);
 

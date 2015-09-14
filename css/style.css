@@ -9,7 +9,7 @@
     height: 100%;
 }
 
-.wrapper {
+.content-wrapper {
     position: fixed;
     z-index: 10;
 }
@@ -62,27 +62,40 @@
 }
 
 #layer1 h1 {
-    background-color: red;
+    -webkit-box-shadow: 0 0 0 600px #4cc1e3;
+    -moz-box-shadow: 0 0 0 600px #4cc1e3;
+    -o-box-shadow: 0 0 0 600px #4cc1e3;
+    box-shadow: 0 0 0 600px #4cc1e3;
 }
-
 #layer2 h1 {
-    background-color: deepskyblue;
+    -webkit-box-shadow: 0 0 0 600px #4ba0bf;
+    -moz-box-shadow: 0 0 0 600px #4ba0bf;
+    -o-box-shadow: 0 0 0 600px #4ba0bf;
+    box-shadow: 0 0 0 600px #4ba0bf;
 }
-
 #layer3 h1 {
-    background-color: gold;
+    -webkit-box-shadow: 0 0 0 600px #497f9a;
+    -moz-box-shadow: 0 0 0 600px #497f9a;
+    -o-box-shadow: 0 0 0 600px #497f9a;
+    box-shadow: 0 0 0 600px #497f9a;
 }
-
 #layer4 h1 {
-    background-color: mediumvioletred;
+    -webkit-box-shadow: 0 0 0 600px #465d76;
+    -moz-box-shadow: 0 0 0 600px #465d76;
+    -o-box-shadow: 0 0 0 600px #465d76;
+    box-shadow: 0 0 0 600px #465d76;
 }
-
 #layer5 h1 {
-    background-color: darkcyan;
+    -webkit-box-shadow: 0 0 0 600px #46455b;
+    -moz-box-shadow: 0 0 0 600px #46455b;
+    -o-box-shadow: 0 0 0 600px #46455b;
+    box-shadow: 0 0 0 600px #46455b;
 }
-
 #layer6 h1 {
-    background-color: darkblue;
+    -webkit-box-shadow: 0 0 0 600px #442b3f;
+    -moz-box-shadow: 0 0 0 600px #442b3f;
+    -o-box-shadow: 0 0 0 600px #442b3f;
+    box-shadow: 0 0 0 600px #442b3f;
 }
 
 .header {
@@ -95,7 +108,7 @@
 }
 
 .main-nav {
-    display: block;
+    display: inline-block;
     margin: 0 auto;
 }
 
@@ -120,4 +133,13 @@
     padding: 10px;
     color: rgba(180, 180, 180, 0.7);
     font-size: 12px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    text-align: center;
 }
