@@ -154,6 +154,37 @@ video {
 #layer1 h1 {
     width: 600px;
     height: 600px;
-    background-image: url(../img/mask.png);
+    background: url(../img/mask.png) no-repeat;
     background-size: 100%;
+    left: 34%;
+    top: 34%;
+    opacity: .8;
+}
+
+#layer2 img {
+    top: 10%;
+    position: absolute;
+    left: 34%;
+    width: 200px;
+    height: 200px;
+}
+
+.test-case-wrapper img {
+    /*display: none;*/
+}
+
+.active-now .test-case-wrapper img {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+img {
+    display: block;
+}
+
+.active{
+    display: block;
 }

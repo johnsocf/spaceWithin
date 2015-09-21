@@ -25,6 +25,7 @@ var enterWithin = (function() {
 
     function zoomEnv() {
         var scroll = nodes.window.scrollTop();
+        console.log(scroll);
         scroll = scroll >= 0 ? (scroll <= depth ? scroll : depth) : 0;
 
         current.layer = (scroll / distance) | 0;
@@ -43,7 +44,22 @@ var enterWithin = (function() {
         if (position !== current.menu) {
 
             var layer = $('.layer[data-depth="' + position * distance + '"]');
+            console.log(layer);
 
+            $('.layer').removeClass('active-now');
+            //$('img').addClass('hidden');
+            $('img').each(function(){
+                var element = $(this);
+                element.attr('src', "img/test.gif").addClass('hidden');
+                console.log(element);
+            });
+            //$('img').attr('src', "img/test.gif").addClass('hidden');
+
+            setTimeout(function(){
+                //layer.append("<div class=\"test-case-wrapper\"><img class=\"hidden\" src=\"img/testcase.gif\"/></div>");
+                layer.find('img').attr('src', 'img/testcase.gif').removeClass('hidden');
+                console.log(layer.find('img'));
+            }, 0);
             nodes.menu.find('.' + classes.activeMenu).removeClass(classes.activeMenu);
 
             nodes.menu.find('a[href="#' + layer.attr('id') + '"]').addClass(classes.activeMenu);
