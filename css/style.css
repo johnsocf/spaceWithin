@@ -94,10 +94,10 @@
     /*box-shadow: 0 0 0 600px #46455b;*/
 /*}*/
 #layer6 h1 {
-    -webkit-box-shadow: 0 0 0 600px #442b3f;
-    -moz-box-shadow: 0 0 0 600px #442b3f;
-    -o-box-shadow: 0 0 0 600px #442b3f;
-    box-shadow: 0 0 0 600px #442b3f;
+    /*-webkit-box-shadow: 0 0 0 600px #442b3f;*/
+    /*-moz-box-shadow: 0 0 0 600px #442b3f;*/
+    /*-o-box-shadow: 0 0 0 600px #442b3f;*/
+    /*box-shadow: 0 0 0 600px #442b3f;*/
 }
 
 .header {
@@ -162,7 +162,7 @@ video {
 }
 
 #layer2 img {
-    top: 10%;
+    top: 21%;
     position: absolute;
     left: 34%;
     width: 200px;
@@ -189,6 +189,12 @@ img {
     display: block;
 }
 
+#layer4 .test-opacity img {
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+
 .test-opacity {
     height: 100%;
     width: 100%;
@@ -198,7 +204,8 @@ img {
     z-index: -10;
 }
 
-#layer2 .test-opacity {
+#layer2 .test-opacity,
+#layer4 img {
     /*background-color: teal;*/
     border: 8px solid red;
     border-right: 12px solid red;
@@ -208,10 +215,44 @@ img {
 }
 
 #layer4 .test-opacity {
-    background-color: deepskyblue;
+    /*background-color: deepskyblue;*/
+    background-image: url(../img/hendyriding.gif);
+    -ms-transform: rotate(25deg); /* IE 9 */
+    -webkit-transform: rotate(25deg); /* Chrome, Safari, Opera */
+    transform: rotate(25deg);
+    height: 200%;
+    width: 200%;
+    left: -13%;
 }
 
 .test-opacity video {
     height: 100%;
     width: auto;
+}
+
+#layer1 .test-case-wrapper {
+    height: 181%;
+}
+
+#layer1 .test-case-wrapper img {
+    height: 100%;
+}
+
+#layer2 img,
+#layer4 img {
+    width: auto;
+}
+
+#layer2 .test-case-wrapper {}
+
+#layer2 img,
+#layer4 img {
+    width: auto;
+    height: 100%;
+    left: 15%;
+    top: 0;
+}
+
+#layer2 img {
+    opacity: .5;
 }

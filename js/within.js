@@ -100,8 +100,20 @@ var enterWithin = (function() {
 
     function showActiveImages(layer) {
         setTimeout(function(){
-            layer.find('img').attr('src', 'img/testcase.gif').removeClass('hidden');
+            var thisLayer = layer.find('img');
+
             layer.addClass('active-now');
+
+            if (layer.hasClass('one')) {
+                thisLayer.attr('src', 'img/kick.gif').removeClass('hidden');
+            } else if (layer.hasClass('two')) {
+                thisLayer.attr('src', 'img/hendyriding.gif').removeClass('hidden');
+            } else if (layer.hasClass('three')) {
+                thisLayer.attr('src', 'img/ridetheirlegsoff.gif').removeClass('hidden');
+            } else if (layer.hasClass('four')) {
+                thisLayer.attr('src', 'img/nzflagie.gif').removeClass('hidden');
+            }
+
         }, 0);
     }
 
@@ -121,7 +133,7 @@ var enterWithin = (function() {
     function playVideo(vid) {
         var playing = vid.is('playing');
         console.log(vid);
-        if (!playing && vid) {
+        if (!playing && vid.length > 0) {
             vid.addClass('playing');
             vid.get(0).play();
         }
