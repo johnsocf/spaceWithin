@@ -112,6 +112,10 @@ var enterWithin = (function() {
                 thisLayer.attr('src', 'img/ridetheirlegsoff.gif').removeClass('hidden');
             } else if (layer.hasClass('four')) {
                 thisLayer.attr('src', 'img/nzflagie.gif').removeClass('hidden');
+            } else if (layer.hasClass('five')) {
+                thisLayer.attr('src', 'img/gohendygo.gif').removeClass('hidden');
+            } else if (layer.hasClass('six')) {
+                thisLayer.attr('src', 'img/go.gif').removeClass('hidden');
             }
 
         }, 0);
