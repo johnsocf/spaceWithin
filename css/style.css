@@ -188,3 +188,20 @@ img {
 .active{
     display: block;
 }
+
+.test-opacity {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    z-index: -10;
+}
+
+#layer2 .test-opacity {
+    background-color: teal;
+}
+
+#layer4 .test-opacity {
+    background-color: deepskyblue;
+}
