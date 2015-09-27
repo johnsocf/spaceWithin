@@ -122,7 +122,7 @@
 }
 
 .nav_item:hover, .nav_item.nav_item-active {
-    color: magenta;
+    color: red;
 }
 
 .footer {
@@ -199,9 +199,19 @@ img {
 }
 
 #layer2 .test-opacity {
-    background-color: teal;
+    /*background-color: teal;*/
+    border: 8px solid red;
+    border-right: 12px solid red;
+    border-bottom: 12px solid red;
+    padding: 12px;
+    overflow: hidden;
 }
 
 #layer4 .test-opacity {
     background-color: deepskyblue;
+}
+
+.test-opacity video {
+    height: 100%;
+    width: auto;
 }
