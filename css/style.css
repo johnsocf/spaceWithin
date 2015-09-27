@@ -205,7 +205,8 @@ img {
 }
 
 #layer2 .test-opacity,
-#layer4 img {
+#layer4 img,
+#layer2 .test-opacity .video {
     /*background-color: teal;*/
     border: 8px solid red;
     border-right: 12px solid red;
@@ -220,9 +221,10 @@ img {
     -ms-transform: rotate(25deg); /* IE 9 */
     -webkit-transform: rotate(25deg); /* Chrome, Safari, Opera */
     transform: rotate(25deg);
-    height: 200%;
-    width: 200%;
-    left: -13%;
+    height: 400%;
+    width: 400%;
+    left: -166%;
+    top: -150%;
 }
 
 .test-opacity video {

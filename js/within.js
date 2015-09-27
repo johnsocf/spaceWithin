@@ -119,12 +119,17 @@ var enterWithin = (function() {
 
     function setOpacity(progress, layer) {
         var testOpacityContainer = layer.find('.test-opacity'),
+            four = layer.hasClass('four');
             video = testOpacityContainer.find('.video');
             doubleProgress = progress * 2,
             fadeInSegment = progress <= .5;
 
-        if (testOpacityContainer.length == 1 && fadeInSegment) {
+        console.log(layer);
+
+        if (testOpacityContainer.length == 1 && fadeInSegment && video.length > 0) {
             playVideo(video);
+            testOpacityContainer.css('opacity', doubleProgress);
+        } else if (testOpacityContainer.length == 1 && fadeInSegment && four) {
             testOpacityContainer.css('opacity', doubleProgress);
         }
 
